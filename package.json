@@ -31,8 +31,10 @@
     "webpack-dev-server": "^5.0.0"
   },
   "dependencies": {
+    "jquery": "3.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "jquery": "3.7.1"
+    "react-icons": "^5.2.1",
+    "style-loader": "^4.0.0"
   }
 }
