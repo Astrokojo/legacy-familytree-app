@@ -1,11 +1,9 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 
 export default function App() {
     return (
-            <React.Fragment>
-                <Navbar />
-            </React.Fragment>
-        
+        <div>
+             <h1>Welcome {new Date().toDateString()}</h1>
+        </div>
     );
 }
