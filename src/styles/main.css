@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Maitree:wght@300;400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +11,7 @@
   --mainColor: #39249e;
   --mainColorLight: #5c4f9f;
   --secondaryColor: #f7f7f7;
+  --tertiary-color: #7f7f7f;
   --textColor: #eee;
 }
 /* HEADER COMPONENT*/
@@ -118,6 +119,34 @@ header .nav-btn {
   cursor: pointer;
 }
 /* FOOTER COMPONENT */
-#footer{
-  border: red 1px solid;
+
+.bottom-message {
+  text-align: center;
+}
+.bottom-message span {
+  color: var(--tertiary-color);
+}
+
+footer {
+  border: 1px solid orange;
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 70rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+  margin-bottom: 1%;
+}
+
+footer ul {
+  width: 20%;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
 }
