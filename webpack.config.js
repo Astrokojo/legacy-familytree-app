@@ -21,11 +21,10 @@ module.exports = {
                 use: 'babel-loader',
             },
             {
-                test: /\.scss$/,
+                test: /\.css$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader',
                 ],
             },
         ],
@@ -35,7 +34,10 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html',
         }),
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css',
+        }),
     ],
     resolve: {
         extensions: ['.js', '.jsx'],
