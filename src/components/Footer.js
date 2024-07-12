@@ -4,7 +4,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 function Footer() {
     return (
-        <><div class="bottom-message primary-heading">
+        <><div className="bottom-message primary-heading">
             <h4>Lets work together.<br /><span>Get in touch.</span></h4>
         </div><footer>
                 <p>© K.A.O.S</p>
