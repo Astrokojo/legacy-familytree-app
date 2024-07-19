@@ -1,5 +1,5 @@
 Add the form to input user data
 Integrate the GoJS 
 Add the login/ registration pages
-HAve data saved to api if user is logined otherwise save it to local
+change fonts to look like ye olde calligraphy
 add tests
