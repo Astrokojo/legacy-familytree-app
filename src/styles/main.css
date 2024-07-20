@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Maitree:wght@300;400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -23,7 +23,6 @@ header {
   padding: 0 2rem;
   background-color: var(--mainColor);
   color: var(--textColor);
-  border: 1px solid red;
 }
 
 nav a {
@@ -83,6 +82,59 @@ header .nav-btn {
   }
 }
 
+/* FORM Component */
+.form-wrapper {
+  width: 500px;
+  background-color: transparent;
+  color: white;
+  border: 5px solid gold;
+  border-radius: 10px;
+  padding: 30px 40px;
+  background:  url('../assets/images/v783-noon-04b.jpg') no-repeat;
+  background-size: cover;
+  background-position: center ;
+
+}
+
+.form-wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.form-wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  backdrop-filter: blur(10px);
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  color: black;
+}
+
+.input-box input::placeholder {
+  color: black;
+}
+
+.form-wrapper button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: white;
+  color: var(--mainColor);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 /*CONTACT COMPONENT*/
 .contact-page-wrapper {
   display: flex;
@@ -128,7 +180,6 @@ header .nav-btn {
 }
 
 footer {
-  border: 1px solid orange;
   position: relative;
   max-width: 100%;
   display: grid;
@@ -149,4 +200,31 @@ footer ul {
 
 footer a {
   text-decoration: none;
+}
+
+/* FORM */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  display: block;
+  width: 400px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--textColor);
+  border: 1px solid var(--tertiary-color);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* LOGIN */
+bodyLogin {
+  margin: "20px 0 0px 0px";
+}
+
+/* Diagram div */
+.diagram-wrapper {
+  width: 75%;
+  height: 50%;
+  border: 1px solid black;
 }

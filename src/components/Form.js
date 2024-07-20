@@ -1,45 +1,90 @@
-import React, { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
-import { fromJS } from 'immutable';
-``
-const BioForm = () => {
-  const { register, handleSubmit, setValue } = useForm();
+import React from 'react';
 
-  // Load saved data from localStorage if available
-  useEffect(() => {
-    const savedData = localStorage.getItem('formData');
-    if (savedData) {
-      const parsedData = JSON.parse(savedData);
-      Object.keys(parsedData).forEach((key) => {
-        setValue(key, parsedData[key]);
-      });
-    }
-  }, [setValue]);
+class FormComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this)
 
-  const onSubmit = (data) => {
-    // Convert form data to Immutable Map
-    const immutableData = fromJS(data);
+    this.state = {
+      name: '',
+      gender: '',
+      birthYear: '',
+      deathYear: '',
+      enableSubmit: false,
+    };
+  }
 
-    // Save data temporarily (e.g., in localStorage or sessionStorage)
-    localStorage.setItem('formData', JSON.stringify(immutableData.toJS()));
-
-    console.log('Data saved temporarily:', immutableData.toJS());
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.onSubmit(this.state);
   };
 
-  return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="username">Enter your name:</label>
-      <input type="text" id="username" {...register('username')} />
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value }, () => {
+      const { name, gender, birthYear, deathYear } = this.state;
+      if (this.state.name !== '') {
+        console.log('State values:', this.state);
+        console.log('Enable submit:', this.state.enableSubmit);
+        this.setState({ enableSubmit: true });
+      }
+    });
+  };
 
-      <label htmlFor="email">Email</label>
-      <input type="email" id="email" {...register('email')} />
 
-      <label htmlFor="age">Enter your age:</label>
-      <input type="number" id="age" {...register('age')} />
+  render() {
+    return (
+      <div className='form-wrapper'>
+        <form onSubmit={this.handleSubmit}>
+          <h1>Input Details</h1>
+          <div className='input-box'>
+            <input 
+              type="text"
+              placeholder='Enter name'
+              id="name"
+              name="name"
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className='input-box'>
+            <input 
+              placeholder='Enter gender'
+              type="text"
+              id="gender"
+              name="gender"
+              value={this.state.gender}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className='input-box'>
+            <input 
+              placeholder='Enter birth year'
+              type="number"
+              id="birthYear"
+              name="birthYear"
+              value={this.state.birthYear}
+              onChange={this.handleChange}
+            />
+          </div>
+          <div className='input-box'>
+            <input 
+              placeholder='Enter death year'
+              type="number"
+              id="deathYear"
+              name="deathYear"
+              value={this.state.deathYear}
+              onChange={this.handleChange}
+            />
+          </div>
+          <button type="submit" disabled={!this.state.enableSubmit}>
+            Submit
+          </button>
+        </form>
+      </div>
+    );
+  }
+}
 
-      <button type="submit">Submit</button>
-    </form>
-  );
-};
-
-export default BioForm;
+export default FormComponent;
