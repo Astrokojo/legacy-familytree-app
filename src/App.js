@@ -4,6 +4,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import GojsDiagram from './components/TestDiagram';
 import FormComponent from './components/Form';
+import './styles/main.css';
 export default function App() {
     return (
         <React.Fragment>

@@ -1,7 +1,7 @@
 import React from "react"
 import { FaLinkedin,FaGithubSquare } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-import '../styles/main.css';
+import '../styles/footer.css';
 function Footer() {
     return (
         <><div className="bottom-message primary-heading">

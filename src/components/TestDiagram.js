@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import * as go from 'gojs';
-import '../styles/main.css';
+import '../styles/diagram.css';
 
 const GojsDiagram = ({ nodeDataArray }) => {
   const diagramRef = useRef(null);
