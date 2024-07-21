@@ -1,6 +1,7 @@
 import React from "react"
-import { FaLinkedin, FaGithub, FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin,FaGithubSquare } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import '../styles/main.css';
 function Footer() {
     return (
         <><div className="bottom-message primary-heading">
@@ -20,7 +21,7 @@ function Footer() {
                     <li>
 
                         <CiMail />
-                        <a href="astrokojo@gmail.com">Mail</a>
+                        <a href="mailto:astrokojo@gmail.com">Mail</a>
                     </li>
                 </ul>
             </footer></>
