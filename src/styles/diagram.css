@@ -1,0 +1,8 @@
+/* Diagram div */
+.diagram-wrapper {
+  width: 75vw;
+  height: 100vh;
+  border: 1px solid black;
+  margin-left: 1%;
+  border-radius: 40px;
+}

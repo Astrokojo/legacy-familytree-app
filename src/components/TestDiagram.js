@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import * as go from 'gojs';
 import '../styles/main.css';
 
-const GojsDiagram = () => {
+const GojsDiagram = ({ nodeDataArray }) => {
   const diagramRef = useRef(null);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const GojsDiagram = () => {
     return () => {
       diagram.dispose(); // Clean up the diagram
     };
-  }, []);
+  }, [nodeDataArray]);
 
   return <div className='diagram-wrapper' ref={diagramRef} style={{ border: '1px solid black' }} />;
 };
