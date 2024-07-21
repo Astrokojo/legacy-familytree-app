@@ -1,15 +1,20 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Contact from './components/Contact';
+import About from './components/About';
 import Footer from './components/Footer';
-import TreeDiagram from './components/TreeDiagram'
+import GojsDiagram from './components/TestDiagram';
+import FormComponent from './components/Form';
 export default function App() {
     return (
         <React.Fragment>
             <Navbar />
-            <Contact />
+            <div className='temp-div'>
+            <FormComponent />
+            <GojsDiagram />
+
+            </div>
+            {/* <About /> */}
             <Footer />
-            <TreeDiagram/>
         </React.Fragment>
     );
 }
