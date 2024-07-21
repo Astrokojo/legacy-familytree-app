@@ -14,6 +14,7 @@
   --tertiary-color: #7f7f7f;
   --textColor: #eee;
 }
+
 /* HEADER COMPONENT*/
 header {
   display: flex;
@@ -224,7 +225,19 @@ bodyLogin {
 
 /* Diagram div */
 .diagram-wrapper {
-  width: 75%;
-  height: 50%;
+  width: 75vw;
+  height: 100vh;
   border: 1px solid black;
+  margin-left: 1%;
+  border-radius: 40px;
+
+}
+
+/* Temp div in App.js to rep the diagram */
+.temp-div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  padding: 1%;
 }
