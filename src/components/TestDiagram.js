@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import * as go from 'gojs';
+import '../styles/main.css';
 
 const GojsDiagram = () => {
   const diagramRef = useRef(null);
@@ -42,7 +43,7 @@ const GojsDiagram = () => {
     };
   }, []);
 
-  return <div ref={diagramRef} style={{ width: '600px', height: '400px', border: '1px solid black' }} />;
+  return <div className='diagram-wrapper' ref={diagramRef} style={{ border: '1px solid black' }} />;
 };
 
 export default GojsDiagram;
