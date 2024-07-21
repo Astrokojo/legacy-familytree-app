@@ -1,6 +1,5 @@
 import React from "react"
-import { FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaGithubSquare } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 function Footer() {
     return (
@@ -10,18 +9,18 @@ function Footer() {
                 <p>© K.A.O.S</p>
                 <ul>
                     <li>
-                        <FaSquareXTwitter />
-                        <a href="#">Twitter</a>
+                        <FaGithubSquare />
+                        <a href="https://github.com/Astrokojo">Github</a>
                     </li>
                     <li>
 
                         <FaLinkedin />
-                        <a href="#">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/kaosei-sarfo/">Linkedin</a>
                     </li>
                     <li>
 
                         <CiMail />
-                        <a href="#">Mail</a>
+                        <a href="astrokojo@gmail.com">Mail</a>
                     </li>
                 </ul>
             </footer></>
