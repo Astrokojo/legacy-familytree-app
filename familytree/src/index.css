@@ -133,7 +133,7 @@
 
 /* FamilyTree Component */
 #myDiagramDiv{
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 500px;
   border: 10px solid blue;
 }

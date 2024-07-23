@@ -2,9 +2,9 @@ import React from "react";
 import Navbar from "./components/Navbar";
 // import Hero from "./components/Hero";
 // import FamilyForm from "./components/FamilyForm";
+import FamilyTree from "./components/FamilyTree";
 
 import { BrowserRouter as Router } from "react-router-dom";
-import FamilyTree from "./components/FamilyTree";
 function App() {
   return (
     <div className="App">
@@ -14,7 +14,7 @@ function App() {
         {/* <Hero /> */}
 
         {/* <FamilyForm /> */}
-        <FamilyTree/>
+        <FamilyTree />
       </Router>
 
     </div>
