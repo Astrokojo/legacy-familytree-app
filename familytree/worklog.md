@@ -1,5 +1,5 @@
 Handle form submission
-Integrate the GoJS 
+~Integrate the GoJS~ 
 arrange final component
 work on deployment
 add tests
