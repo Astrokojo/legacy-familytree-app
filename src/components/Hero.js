@@ -10,8 +10,8 @@ const Hero = () => {
     return (
         <div className="hero-bg">
             <div className="hero-content">
+                <p>Start with a common ancestor</p>
                 <h2>Build Your Family Legacy</h2>
-                <p>Create and explore a detailed family tree with ease</p>
 
                 <button onClick={handleClick}>Click me</button>
             </div>

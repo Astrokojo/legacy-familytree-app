@@ -1,0 +1,58 @@
+[
+  {
+    "key": 1,
+    "name": "John Doe",
+    "gender": "M",
+    "birthYear": 1950,
+    "deathYear": null,
+    "parent": null
+  },
+  {
+    "key": 2,
+    "name": "Jane Smith",
+    "gender": "F",
+    "birthYear": 1955,
+    "deathYear": null,
+    "parent": null
+  },
+  {
+    "key": 3,
+    "name": "Michael Doe",
+    "gender": "M",
+    "birthYear": 1975,
+    "deathYear": null,
+    "parent": 1
+  },
+  {
+    "key": 4,
+    "name": "Emily Doe",
+    "gender": "F",
+    "birthYear": 1980,
+    "deathYear": null,
+    "parent": 1
+  },
+  {
+    "key": 5,
+    "name": "Anna Smith",
+    "gender": "F",
+    "birthYear": 1985,
+    "deathYear": null,
+    "parent": 2
+  },
+  {
+    "key": 6,
+    "name": "Robert Doe",
+    "gender": "M",
+    "birthYear": 2000,
+    "deathYear": null,
+    "parent": 3
+  },
+  {
+    "key": 7,
+    "name": "Sophia Doe",
+    "gender": "F",
+    "birthYear": 2005,
+    "deathYear": null,
+    "parent": 3
+  }
+]
