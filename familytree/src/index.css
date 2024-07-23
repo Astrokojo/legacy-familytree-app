@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Maitree:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+:root {
+  --mainColor: #39249e;
+  --mainColorLight: #5c4f9f;
+  --secondaryColor: #f7f7f7;
+  --tertiary-color: #7f7f7f;
+  --textColor: #eee;
+}
+
+/* Navbar COMPONENT*/
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+
+/* Hero Component */
+.hero-bg {
+  background: url("../public/dreamup_creation_by_prarthbista_dgmqave.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100vw;
+}
+.hero-content-layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  height: 70vh;
+  width: 100vw;
+}
+.hero-content {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+}
+.hero p {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Form Component */
+.family-form {
+  width: 500px;
+  background-color: transparent;
+  background: url("../public/v783-noon-04b.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  border: 5px solid gold;
+  border-radius: 10px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;;
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  p{
+    color:red;
+  }
+  input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    color: black;
+    backdrop-filter: blur(10px);
+    margin: 10px 10px;
+    padding: 0px 10px;
+  }
+
+  input ::placeholder {
+    color: black;
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+    background: gold;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+}
+
+/* FamilyTree Component */
+#myDiagramDiv{
+  width: 100%;
+  height: 500px;
+  border: 10px solid blue;
+}
