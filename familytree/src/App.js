@@ -1,10 +1,9 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 // import Hero from "./components/Hero";
-// import FamilyForm from "./components/FamilyForm";
 import FamilyTree from "./components/FamilyTree";
 
 import { BrowserRouter as Router } from "react-router-dom";
+import FamilyForm from "./components/FamilyForm";
 function App() {
   return (
     <div className="App">
@@ -13,7 +12,7 @@ function App() {
 
         {/* <Hero /> */}
 
-        {/* <FamilyForm /> */}
+        <FamilyForm/>
         <FamilyTree />
       </Router>
 
