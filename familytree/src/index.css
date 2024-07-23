@@ -4,10 +4,6 @@
 * {
   margin: 0;
   font-family: "Chakra Petch", sans-serif;
-  body {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 :root {
@@ -133,7 +129,8 @@
 
 /* FamilyTree Component */
 #myDiagramDiv{
-  width: 100%;
-  height: 500px;
+  width: 50%;
+  height: 50vh;
   border: 10px solid blue;
+  margin-right: 1px;
 }
