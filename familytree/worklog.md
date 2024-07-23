@@ -1,7 +1,9 @@
-Handle form submission
-~Integrate the GoJS~ 
+Handle form submission to api
 arrange final component
 work on deployment
 add tests
-Add REadme
-have the form state save any new inputs into a const array(dataNodearray) then send that to be used by the diagram
+check out npm package Concurrently and install it
+Have diagram fonts be calligraphy
+
+~Integrate the GoJS~ 
+~Add REadme~
