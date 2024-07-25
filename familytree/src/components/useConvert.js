@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import useFetch from "./useFetch";
 import {LOCAL_API, EXTERNAL_API} from './api';
 const useConvert = () => {
-    // const { data, isPending, error } = useFetch(LOCAL_API);
-    const { data, isPending, error } = useFetch(EXTERNAL_API);
+    const { data, isPending, error } = useFetch(LOCAL_API);
+    // const { data, isPending, error } = useFetch(EXTERNAL_API);
 
     const [convertedData, setConvertedData] = useState([]);
 
