@@ -171,6 +171,12 @@
 
 
 /* FamilyTree Component */
+.familytree-header{
+  text-align: center;
+  margin-top: 1rem;
+  font-size: x-large;
+  align-items: center;
+}
 #myDiagramDiv {
   width: 90%;
   height: 500px;
