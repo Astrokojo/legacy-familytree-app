@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 // import FamilyForm from "./components/FamilyForm";
 import FamilyTree from "./components/FamilyTree";
 
@@ -11,8 +11,7 @@ function App() {
       <Router>
         <Navbar />
 
-        {/* <Hero /> */}
-
+        <Hero />
         {/* <FamilyForm /> */}
         <FamilyTree />
       </Router>
