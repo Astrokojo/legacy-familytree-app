@@ -1,4 +1,5 @@
-
+import { motion } from 'framer-motion';
+import {  slideIn } from './variants';
 const FamilyList = ({ modelData }) => {
 
     // Create a map of id to name for parent lookup
@@ -9,7 +10,11 @@ const FamilyList = ({ modelData }) => {
     console.log(parentNameMap);
 
     return (
-        <div className="md-list">
+        <motion.div
+            variants={slideIn("left", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }} className="md-list">
             <table>
                 <thead>
                     <tr>
@@ -34,7 +39,7 @@ const FamilyList = ({ modelData }) => {
                 {/* <h2>{md.name}</h2> */}
             </table>
 
-        </div>
+        </motion.div>
     );
 }
 export default FamilyList;
