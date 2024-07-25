@@ -58,4 +58,4 @@ The server will run at `http://localhost:3000` by default.\
 - **Kojo Antwi Osei-Sarfo** - *Developer* - [Your GitHub Profile](https://github.com/Astrokojo)
   - Email: [astrokojo@gmail.com](mailto:astrokojo@gmail.com)
   - Email: [kaoseisarfo@yahoo.com](mailto:kaoseisarfo@yahoo.com)
-  - LinkedIn: [Kojo Antwi Osei-Sarfo](linkedin.com/in/kaosei-sarfo)
+  - LinkedIn: [Kojo Antwi Osei-Sarfo](https://linkedin.com/in/kaosei-sarfo)
