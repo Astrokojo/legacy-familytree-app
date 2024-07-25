@@ -6,6 +6,7 @@
 - [Features](#features)
 - [Configuration](#configuration)
 - [License](#license)
+- [Author](#Author)
 - [Contact Information](#contact-information)
 
 
@@ -52,3 +53,9 @@ The server will run at `http://localhost:3000` by default.\
 - Utilizes `json-server` to quickly create a mock REST API.
 - Utilizes `GOJS` to render the diagram
 
+## Author
+
+- **Kojo Antwi Osei-Sarfo** - *Developer* - [Your GitHub Profile](https://github.com/Astrokojo)
+  - Email: [astrokojo@gmail.com](mailto:astrokojo@gmail.com)
+  - Email: [kaoseisarfo@yahoo.com](mailto:kaoseisarfo@yahoo.com)
+  - LinkedIn: [Kojo Antwi Osei-Sarfo](linkedin.com/in/kaosei-sarfo)
