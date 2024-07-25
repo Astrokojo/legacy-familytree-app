@@ -36,10 +36,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `json-server --watch db.json -port portnumber`
+### `npm run json-server`
 
 Starts the JSON server with the provided `db.json` file:
-If no port number is provided the server will run at `http://localhost:3000` by default.\
+The server will run at `http://localhost:8000` by default.\
+
+### `npm run dev`
+Starts both app and server concurrently
+
     
 
 ### Using the API
@@ -52,6 +56,7 @@ If no port number is provided the server will run at `http://localhost:3000` by 
 ## Features
 - Utilizes `json-server` to quickly create a mock REST API.
 - Utilizes `GOJS` to render the diagram
+- Utilizes `framer-motion` for animations
 
 ## Author
 
