@@ -39,7 +39,7 @@ You may also see any lint errors in the console.
 ### `json-server --watch db.json -port portnumber`
 
 Starts the JSON server with the provided `db.json` file:
-The server will run at `http://localhost:3000` by default.\
+If no port number is provided the server will run at `http://localhost:3000` by default.\
     
 
 ### Using the API
