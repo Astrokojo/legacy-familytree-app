@@ -4,7 +4,7 @@ import { CiMail } from "react-icons/ci";
 const Footer = () => {
     return (
         <><div className="bottom-message primary-heading">
-            <h4>Lets work together.<br /><span>Get in touch.</span></h4>
+            <p>Lets work together.<br /><span>Get in touch.</span></p>
         </div><footer>
                 <div className="pulsing-text">
                     <p>© K.A.O.S</p>

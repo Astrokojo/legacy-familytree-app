@@ -155,7 +155,7 @@
 .family-form input,
 .family-form select {
   width: 100%;
-  font-size: 1rem; /* Adjusted for consistency */
+  font-size: 16px; /* Adjusted for consistency */
   color: black;
   margin: 1rem 0;
   padding: 0.5rem;
@@ -214,16 +214,18 @@ tbody:hover tr:hover td {
   height: 500px;
   margin: 1rem auto; /* Adjusted for centering */
   border: 1px solid rgb(0, 0, 0);
+  overflow: scroll;
 }
 
 /* Footer COMPONENT */
 .bottom-message {
   text-align: center;
   margin-top: 1rem;
+  font-weight: bold;
 }
 
 .bottom-message span {
-  color: var(--tertiary-color);
+  color: #D4AF37;
 }
 
 footer {

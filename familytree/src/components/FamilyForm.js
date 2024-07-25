@@ -75,13 +75,21 @@ const FamilyForm = () => {
                         onChange={(e) => handleChange(data.key, e)}
                         placeholder="Name"
                     />
-                    <input
-                        type="text"
+                    <label htmlFor={`gender-${data.key}`}></label>
+                    <select
+                        id={`gender-${data.key}`}
                         name="gender"
                         value={data.gender}
                         onChange={(e) => handleChange(data.key, e)}
-                        placeholder="Gender"
-                    />
+                    >
+                        <option value="" disabled>Select Gender</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="non-binary">Non-binary</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+
+
                     <input
                         type="text"
                         name="birthYear"
