@@ -51,12 +51,8 @@ const FamilyForm = () => {
             {modelData.map((data, index) => (
                 <div key={data.key} className="form-group">
                     <h3>{data.name}</h3>
-                    <button type="button" onClick={() => handleRemove(index)}>Remove</button>
                     <input type="text" name="name" value={data.name} onChange={(e) => handleChange(index, e)} placeholder="Name" />
                     <input type="text" name="gender" value={data.gender} onChange={(e) => handleChange(index, e)} placeholder="Gender" />
-                    <input type="text" name="fullTitle" value={data.fullTitle} onChange={(e) => handleChange(index, e)} placeholder="Full Title" />
-                    <input type="text" name="kanjiName" value={data.kanjiName} onChange={(e) => handleChange(index, e)} placeholder="Kanji Name" />
-                    <input type="text" name="posthumousName" value={data.posthumousName} onChange={(e) => handleChange(index, e)} placeholder="Posthumous Name" />
                     <input type="text" name="birthYear" value={data.birthYear} onChange={(e) => handleChange(index, e)} placeholder="Birth Year" />
                     <input type="text" name="deathYear" value={data.deathYear} onChange={(e) => handleChange(index, e)} placeholder="Death Year" />
                     <select name="parent" value={data.parent} onChange={(e) => handleChange(index, e)}>
@@ -66,7 +62,7 @@ const FamilyForm = () => {
                             </option>
                         ))}
                     </select>
-                    <input type="text" name="statusChange" value={data.statusChange} onChange={(e) => handleChange(index, e)} placeholder="Status Change" />
+                    <button type="button" onClick={() => handleRemove(index)}>Remove</button>
                 </div>
             ))}
             <button type="button" onClick={handleAdd}>Add Member</button>
