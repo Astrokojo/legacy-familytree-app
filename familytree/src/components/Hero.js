@@ -6,7 +6,7 @@ const Hero = () => {
             variants={slideIn("right", 0.1)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 1 }}
+            viewport={{ once: false, amount: 0.7 }}
             className="hero">
             <div className="hero-mask">
                 <motion.div
