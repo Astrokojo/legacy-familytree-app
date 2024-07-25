@@ -33,14 +33,16 @@ const FamilyForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = modelData.filter((data) => data.name !== '');
-        console.log(data);
-        fetch('http://localhost:8000/modelData', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
-          }).then(() => {
-            console.log('new member added');
-          })
+        console.log(JSON.stringify({modelData: data})); // expected output
+        console.log(JSON.stringify(data)); // expected output
+        console.log(data); //actual output being submitted
+        // fetch('http://localhost:8000/modelData', {
+        //     method: 'POST',
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify(data)
+        //   }).then(() => {
+        //     console.log('new member added');
+        //   })
     };
 
    
