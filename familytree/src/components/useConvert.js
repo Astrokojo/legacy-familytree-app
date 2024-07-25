@@ -13,9 +13,6 @@ const useConvert = () => {
                 parent: item.parent,
                 name: item.name,
                 gender: item.gender,
-                fullTitle: item.fullTitle,
-                kanjiName: item.kanjiName,
-                posthumousName: item.posthumousName,
                 birthYear: item.birthYear,
                 deathYear: item.deathYear
             }));
