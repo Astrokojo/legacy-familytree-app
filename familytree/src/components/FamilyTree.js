@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import{ useEffect, useRef } from 'react';
 import { setupDiagram } from './setupDiagram';
 import useConvert from './useConvert';
 
