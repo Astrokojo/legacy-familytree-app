@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 
 const FamilyForm = () => {
 
     const [modelData, setModelData] = useState([
-        { key: uuidv4(), name: '', gender: '', fullTitle: '', kanjiName: '', posthumousName: '', birthYear: '', deathYear: '', parent: '', statusChange: '' }
+        { key: uuidv4(), name: '', gender: '', birthYear: '', deathYear: '', parent: '' }
     ]);
 
-   const parentKeys = modelData.map((member => ({key: member.key, name: member.name})));
-   
+    const parentKeys = modelData.map((member => ({ key: member.key, name: member.name })));
+
     // Handle input change for member data
     const handleChange = (index, e) => {
         const { name, value } = e.target;
@@ -20,7 +20,7 @@ const FamilyForm = () => {
 
     // Add new member with uuid key
     const handleAdd = () => {
-        setModelData([...modelData, { key: uuidv4(), name: '', gender: '', fullTitle: '', kanjiName: '', posthumousName: '', birthYear: '', deathYear: '', parent: '', statusChange: '' }]);
+        setModelData([...modelData, { key: uuidv4(), name: '', gender: '', birthYear: '', deathYear: '', parent: '' }]);
     };
 
     // remove a member from the form 
@@ -33,7 +33,7 @@ const FamilyForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const data = modelData.filter((data) => data.name !== '');
-        console.log(JSON.stringify({modelData: data})); // expected output
+        console.log(JSON.stringify({ modelData: data })); // expected output
         console.log(JSON.stringify(data)); // expected output
         console.log(data); //actual output being submitted
         // fetch('http://localhost:8000/modelData', {
@@ -45,7 +45,7 @@ const FamilyForm = () => {
         //   })
     };
 
-   
+
     return (
         <form onSubmit={handleSubmit}>
             {modelData.map((data, index) => (
