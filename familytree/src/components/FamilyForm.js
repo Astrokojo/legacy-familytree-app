@@ -32,7 +32,7 @@ const FamilyForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data = modelData.filter((data) => data.name !== '');
+        const data = modelData;
         console.log(JSON.stringify({ modelData: data })); // expected output
         console.log(JSON.stringify(data)); // expected output
         console.log(data); //actual output being submitted
