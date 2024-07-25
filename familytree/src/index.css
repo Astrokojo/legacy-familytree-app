@@ -168,3 +168,35 @@
   border: 1px solid rgb(0, 0, 0);
   margin-right: 1px;
 }
+
+/* Footer COMPONENT */
+
+.bottom-message {
+  text-align: center;
+}
+.bottom-message span {
+  color: var(--tertiary-color);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 70rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  width: 20%;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+}

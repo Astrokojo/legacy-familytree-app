@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import FamilyTree from "./components/FamilyTree";
 
 import { BrowserRouter as Router } from "react-router-dom";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -14,8 +15,9 @@ function App() {
         <Hero />
         {/* <FamilyForm /> */}
         <FamilyTree />
+              
       </Router>
-
+<Footer />
     </div>
   );
 }
