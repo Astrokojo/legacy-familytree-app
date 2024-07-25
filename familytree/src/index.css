@@ -22,6 +22,7 @@
   max-width: 70%;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  position: sticky;
 }
 .navbar h1 {
   color: #f1356d;
@@ -39,39 +40,71 @@
 }
 
 /* Hero Component */
-.hero-bg {
+.hero {
   background: url("../public/dreamup_creation_by_prarthbista_dgmqave.jpg")
     no-repeat;
   background-size: cover;
   background-position: center;
-  height: 70vh;
-  width: 100vw;
-}
-.hero-content-layer {
+  background-attachment: fixed;
+  height: 400px;
+  border-radius: 12px;
+  position: relative;
+  padding: 5rem 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
   color: white;
-  height: 70vh;
-  width: 100vw;
-}
-.hero-content {
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  padding: 0 10%;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
-.hero-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  font-style: normal;
+.hero-mask {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero p {
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-text h4 {
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: white;
+  color: black;
 }
 
 /* Form Component */
@@ -86,14 +119,14 @@
   border-radius: 10px;
   padding: 30px 40px;
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
 
   h1 {
     font-size: 36px;
     text-align: center;
   }
-  p{
-    color:red;
+  p {
+    color: red;
   }
   input {
     width: 100%;
@@ -128,9 +161,43 @@
 }
 
 /* FamilyTree Component */
-#myDiagramDiv{
-  width: 50%;
-  height: 50vh;
-  border: 10px solid blue;
+#myDiagramDiv {
+  width: 90%;
+  height: 500px;
+  margin-left: 4rem;
+  border: 1px solid rgb(0, 0, 0);
   margin-right: 1px;
+}
+
+/* Footer COMPONENT */
+
+.bottom-message {
+  text-align: center;
+  margin-top: 1rem;
+}
+.bottom-message span {
+  color: var(--tertiary-color);
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 70rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  width: 20%;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
 }
