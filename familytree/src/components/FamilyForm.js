@@ -1,15 +1,13 @@
 import { useState } from 'react';
-import {v4 as uuidv4} from 'uuid';
-
+import { v4 as uuidv4 } from 'uuid';
 
 const FamilyForm = () => {
-
     const [modelData, setModelData] = useState([
         { key: uuidv4(), name: '', gender: '', fullTitle: '', kanjiName: '', posthumousName: '', birthYear: '', deathYear: '', parent: '', statusChange: '' }
     ]);
 
-   const parentKeys = modelData.map((member => ({key: member.key, name: member.name})));
-   
+    const parentKeys = modelData.map(member => ({ key: member.key, name: member.name }));
+
     // Handle input change for member data
     const handleChange = (index, e) => {
         const { name, value } = e.target;
@@ -23,29 +21,27 @@ const FamilyForm = () => {
         setModelData([...modelData, { key: uuidv4(), name: '', gender: '', fullTitle: '', kanjiName: '', posthumousName: '', birthYear: '', deathYear: '', parent: '', statusChange: '' }]);
     };
 
-    // remove a member from the form 
+    // Remove a member from the form
     const handleRemove = (index) => {
         const newModelData = modelData.filter((_, i) => i !== index);
         setModelData(newModelData);
     };
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data = modelData.filter((data) => data.name !== '');
-        console.log(JSON.stringify({modelData: data})); // expected output
+        const data = modelData.filter(data => data.name !== '');
+        console.log(JSON.stringify({ modelData: data })); // expected output
         console.log(JSON.stringify(data)); // expected output
-        console.log(data); //actual output being submitted
-        // fetch('http://localhost:8000/modelData', {
-        //     method: 'POST',
-        //     headers: { "Content-Type": "application/json" },
-        //     body: JSON.stringify(data)
-        //   }).then(() => {
-        //     console.log('new member added');
-        //   })
+        console.log(data); // actual output being submitted
+        fetch('http://localhost:8000/modelData', {
+            method: 'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(...data)
+        }).then(() => {
+            console.log('new member added');
+        })
     };
 
-   
     return (
         <form onSubmit={handleSubmit}>
             {modelData.map((data, index) => (
@@ -58,8 +54,7 @@ const FamilyForm = () => {
                     <select name="parent" value={data.parent} onChange={(e) => handleChange(index, e)}>
                         <option value="" disabled>Select a Parent</option>
                         {parentKeys.filter(option => option.key !== data.key).map(option => (
-                            <option key={option.key} value={option.key}>{option.name}
-                            </option>
+                            <option key={option.key} value={option.key}>{option.name}</option>
                         ))}
                     </select>
                     <button type="button" onClick={() => handleRemove(index)}>Remove</button>
