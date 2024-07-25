@@ -35,13 +35,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### Running the JSON Server
-## `json-server --watch db.json`
+### `json-server --watch db.json -port portnumber`
+
 Starts the JSON server with the provided `db.json` file:
 The server will run at `http://localhost:3000` by default.\
     
-## `json-server --watch db.json -port portnumber`
- Specify your desired port number if you want to run the server on a different port.
 
 ### Using the API
 - You can now make HTTP requests to the API endpoints. For example:
