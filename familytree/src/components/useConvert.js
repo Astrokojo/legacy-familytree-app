@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import useFetch from "./useFetch";
 const useConvert = () => {
-    const { data, isPending, error } = useFetch("http://localhost:8000/modelData");
+    // const { data, isPending, error } = useFetch("http://localhost:8000/modelData");
+    const { data, isPending, error } = useFetch("https://my-json-server.typicode.com/Astrokojo/json-server/modelData");
 
     const [convertedData, setConvertedData] = useState([]);
 
