@@ -22,6 +22,7 @@
   max-width: 70%;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  position: sticky;
 }
 .navbar h1 {
   color: #f1356d;
@@ -54,6 +55,7 @@
   align-items: center;
   color: white;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .hero-mask {
@@ -85,7 +87,7 @@
 }
 
 .hero-text h4 {
-  margin-bottom: 1rem; 
+  margin-bottom: 2rem; 
 }
 
 .hero-button {
@@ -160,8 +162,9 @@
 
 /* FamilyTree Component */
 #myDiagramDiv{
-  width: 50%;
-  height: 50vh;
-  border: 10px solid blue;
+  width: 90%;
+  height: 500px;
+  margin-left: 4rem;
+  border: 1px solid rgb(0, 0, 0);
   margin-right: 1px;
 }
