@@ -6,14 +6,14 @@ const Hero = () => {
             variants={fadeIn("up", 0.1)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: true, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }}
             className="hero">
             <div className="hero-mask">
                 <motion.div
                     variants={slideIn("up", 0.3)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: true, amount: 0.7 }}
+                    viewport={{ once: false, amount: 0.7 }}
                     className="hero-content">
                     <div className="hero-text">
                         <h1 >Start With A Common Ancestor</h1>

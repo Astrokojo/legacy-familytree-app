@@ -24,12 +24,15 @@ const FamilyTree = () => {
     if (isPending) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
-    return <motion.div
+    return <div className='familytree-header'>
+        <h2>Family Tree</h2>
+        <motion.div
         variants={fadeIn("right", 0.1)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.9 }}
-        id="myDiagramDiv" ref={diagramRef} />;
+        id="myDiagramDiv" ref={diagramRef} />
+        </div>
 };
 
 export default FamilyTree;
