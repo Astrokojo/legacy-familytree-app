@@ -6,17 +6,17 @@ const Hero = () => {
             variants={fadeIn("up", 0.1)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.1 }}
             className="hero">
             <div className="hero-mask">
                 <motion.div
-                    variants={slideIn("up", 0.3)}
+                    variants={slideIn("up", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
                     className="hero-content">
                     <div className="hero-text">
-                        <h1 >Start With A Common Ancestor</h1>
+                        <h1 >Explore the Roots of Your Family Tree</h1>
                         <h4 >Build Your Legacy</h4>
                         {/* <a to="" className="hero-button" href="#!" role="button">Call to action</a> */}
                     </div>

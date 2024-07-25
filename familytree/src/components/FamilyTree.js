@@ -24,15 +24,19 @@ const FamilyTree = () => {
     if (isPending) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
-    return <div className='familytree-header'>
-        <h2>Family Tree</h2>
+    return (<motion.div
+        variants={fadeIn("right", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.9 }} className='familytree-header'>
+        <h2>See Your Ancestry in Full Bloom</h2>
         <motion.div
-        variants={fadeIn("right", 0.1)}
+        variants={fadeIn("right", 0.5)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.9 }}
         id="myDiagramDiv" ref={diagramRef} />
-        </div>
+        </motion.div>)
 };
 
 export default FamilyTree;

@@ -1,12 +1,14 @@
 import React from "react"
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-const Footer= ()=> {
+const Footer = () => {
     return (
         <><div className="bottom-message primary-heading">
             <h4>Lets work together.<br /><span>Get in touch.</span></h4>
         </div><footer>
-                <p>© K.A.O.S</p>
+                <div className="pulsing-text">
+                    <p>© K.A.O.S</p>
+                </div>
                 <ul>
                     <li>
                         <FaGithubSquare />
