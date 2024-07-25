@@ -55,6 +55,7 @@ const FamilyForm = () => {
                 })
                 .then(data => {
                     console.log('New member added', data);
+                    window.location.reload(); // Reload the page after successful submission    
                 })
                 .catch(error => {
                     console.error('There was a problem with the fetch operation:', error);
@@ -65,7 +66,7 @@ const FamilyForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             {modelData.map((data) => (
-                <div key={data.key} className="form-group">
+                <div key={data.key} className="family-form">
                     <h3>{data.name || 'New Member'}</h3>
                     <input
                         type="text"
