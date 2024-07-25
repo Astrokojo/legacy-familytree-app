@@ -1,16 +1,28 @@
+import { motion } from 'framer-motion';
+import { fadeIn, slideIn } from './variants';
 const Hero = () => {
     return (
-        <div className="hero">
+        <motion.div
+            variants={slideIn("right", 0.1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 1 }}
+            className="hero">
             <div className="hero-mask">
-                <div className="hero-content">
+                <motion.div
+                    variants={fadeIn("up", 0.3)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: true, amount: 0.7 }}
+                    className="hero-content">
                     <div className="hero-text">
                         <h1 >Start With A Common Ancestor</h1>
                         <h4 >Build Your Legacy</h4>
                         {/* <a to="" className="hero-button" href="#!" role="button">Call to action</a> */}
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
 
 
     );

@@ -1,6 +1,8 @@
 import{ useEffect, useRef } from 'react';
 import { setupDiagram } from './setupDiagram';
 import useConvert from './useConvert';
+import { motion } from 'framer-motion';
+import { fadeIn } from './variants';
 
 const FamilyTree = () => {
     const { convertedData: modelData, isPending, error } = useConvert();
@@ -22,7 +24,12 @@ const FamilyTree = () => {
     if (isPending) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
-    return <div id="myDiagramDiv" ref={diagramRef} />;
+    return <motion.div
+        variants={fadeIn("right", 0.1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        id="myDiagramDiv" ref={diagramRef} />;
 };
 
 export default FamilyTree;
