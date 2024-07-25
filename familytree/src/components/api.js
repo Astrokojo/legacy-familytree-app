@@ -1,1 +1,2 @@
-export const API_URL = "https://api.jsonbin.io/v3/b/669f01e7ad19ca34f88b78a5";
+export const LOCAL_API = "http://localhost:8000/modelData";
+export const EXTERNAL_API = "https://my-json-server.typicode.com/Astrokojo/json-server/modelData";

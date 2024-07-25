@@ -1,24 +1,18 @@
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 const Hero = () => {
     return (
-        <Parallax pages={1.5}>
-            <ParallaxLayer
-                offset={0}
-                speed={0.5}
-                factor={1}
-                className="hero-bg" />
-            <ParallaxLayer
-                offset={0}
-                speed={0.8}
-                factor={1.5}
-                className="hero-content-layer">
-
+        <div className="hero">
+            <div className="hero-mask">
                 <div className="hero-content">
-                    <p>Start with a common ancestor</p>
-                    <h1>Build Your Family Tree</h1>
+                    <div className="hero-text">
+                        <h1 >Start With A Common Ancestor</h1>
+                        <h4 >Build Your Legacy</h4>
+                        {/* <a to="" className="hero-button" href="#!" role="button">Call to action</a> */}
+                    </div>
                 </div>
-            </ParallaxLayer>
-        </Parallax>
+            </div>
+        </div>
+
+
     );
 }
 export default Hero;

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import useFetch from "./useFetch";
+import {LOCAL_API, EXTERNAL_API} from './api';
 const useConvert = () => {
-    const { data, isPending, error } = useFetch("http://localhost:8000/modelData");
+    // const { data, isPending, error } = useFetch(LOCAL_API);
+    const { data, isPending, error } = useFetch(EXTERNAL_API);
 
     const [convertedData, setConvertedData] = useState([]);
 
@@ -12,9 +14,6 @@ const useConvert = () => {
                 parent: item.parent,
                 name: item.name,
                 gender: item.gender,
-                fullTitle: item.fullTitle,
-                kanjiName: item.kanjiName,
-                posthumousName: item.posthumousName,
                 birthYear: item.birthYear,
                 deathYear: item.deathYear
             }));
