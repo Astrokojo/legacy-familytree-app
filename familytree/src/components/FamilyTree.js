@@ -28,7 +28,7 @@ const FamilyTree = () => {
         variants={fadeIn("right", 0.1)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.9 }}
         id="myDiagramDiv" ref={diagramRef} />;
 };
 
