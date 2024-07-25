@@ -46,11 +46,11 @@ Starts both app and server concurrently
 
     
 
-### Using the API
+### Using the API_URL
 - You can now make HTTP requests to the API endpoints. For example:
     ```sh
-    GET http://localhost:3000/endpoint
-    POST http://localhost:3000/endpoint
+    GET http://localhost:8000/endpoint
+    POST http://localhost:8000/endpoint
     ```
 
 ## Features
