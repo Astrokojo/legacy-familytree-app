@@ -1,3 +1,22 @@
 {
-  "modelData": []
+  "modelData": [
+    {
+      "id": "c139",
+      "key": "ef0f4d81-ddba-410b-833d-3c5a05d179d7",
+      "name": "Alan",
+      "gender": "M",
+      "birthYear": "1997",
+      "deathYear": "5000",
+      "parent": ""
+    },
+    {
+      "id": "74fa",
+      "key": "a74cdbb4-dc76-4b65-97d5-770a4779875f",
+      "name": "Zheilver, Ruler of the Undead",
+      "gender": "F",
+      "birthYear": "1997",
+      "deathYear": "5000",
+      "parent": "ef0f4d81-ddba-410b-833d-3c5a05d179d7"
+    }
+  ]
 }

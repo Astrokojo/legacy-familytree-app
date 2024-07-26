@@ -37,9 +37,9 @@ const FamilyForm = () => {
         e.preventDefault();
         const data = modelData;
 
-        console.log(JSON.stringify({ modelData: data })); // expected output
-        console.log(JSON.stringify(data)); // expected output
-        console.log(data); // actual output being submitted
+        // console.log(JSON.stringify({ modelData: data })); // expected output
+        // console.log(JSON.stringify(data)); // expected output
+        // console.log(data); // actual output being submitted
 
         data.forEach(member => {
             fetch('http://localhost:8000/modelData', {
