@@ -44,14 +44,7 @@ The server will run at `http://localhost:8000` by default.\
 ### `npm run dev`
 Starts both app and server concurrently
 
-    
 
-### Using the API_URL
-- You can now make HTTP requests to the API endpoints. For example:
-    ```sh
-    GET http://localhost:8000/endpoint
-    POST http://localhost:8000/endpoint
-    ```
 
 ## Features
 - Utilizes `json-server` to quickly create a mock REST API.
