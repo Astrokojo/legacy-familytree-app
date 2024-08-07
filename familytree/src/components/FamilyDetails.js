@@ -1,12 +1,12 @@
-import FamilyList from "./FamilyList";
-import useFetch from "./useFetch";
-import { LOCAL_API } from "./api";
-import ClearDataButton from "./ClearDataButton";
-import FamilyForm from "./FamilyForm";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn } from "./variants";
-const FamilyDetails = () => {
-  const { error, isPending, data: modelData } = useFetch(LOCAL_API)
+import { LOCAL_API } from "../config/apiEndpoints";
+import useFetch from "../hooks/useFetch";
+import ClearDataButton from "../utils/clearDataButton";
+import { fadeIn, slideIn } from "../utils/varants";
+import FamilyForm from "./FamilyForm";
+import FamilyList from "./FamilyList";
+function FamilyDetails() {
+  const { error, isPending, data: modelData } = useFetch(LOCAL_API);
 
   return (
     <div className="family-details">
