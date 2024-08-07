@@ -1,8 +1,8 @@
-import{ useEffect, useRef } from 'react';
-import { setupDiagram } from './setupDiagram';
-import useConvert from './useConvert';
+import { useEffect, useRef } from 'react';
+import { setupDiagram } from '../utils/setupDiagram';
+import useConvert from '../hooks/useConvert';
 import { motion } from 'framer-motion';
-import { fadeIn } from './variants';
+import { fadeIn } from '../utils/variants';
 
 const FamilyTree = () => {
     const { convertedData: modelData, isPending, error } = useConvert();
@@ -31,12 +31,12 @@ const FamilyTree = () => {
         viewport={{ once: false, amount: 0.9 }} className='familytree-header'>
         <h2>See Your Ancestry in Full Bloom</h2>
         <motion.div
-        variants={fadeIn("right", 0.5)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.9 }}
-        id="myDiagramDiv" ref={diagramRef} />
-        </motion.div>)
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.9 }}
+            id="myDiagramDiv" ref={diagramRef} />
+    </motion.div>)
 };
 
 export default FamilyTree;
