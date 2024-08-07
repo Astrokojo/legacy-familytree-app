@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ClearDataButton = () => {
     const handleClearAll = () => {
         // Step 1: Fetch all data
