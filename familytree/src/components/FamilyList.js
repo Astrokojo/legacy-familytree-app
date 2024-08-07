@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import {  slideIn } from './variants';
+import { slideIn } from '../utils/variants';
 const FamilyList = ({ modelData }) => {
 
     // Create a map of id to name for parent lookup
