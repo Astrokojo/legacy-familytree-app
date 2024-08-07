@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { fadeIn, slideIn } from './variants';
+import { fadeIn, slideIn } from '../utils/variants';
 const Hero = () => {
     return (
         <motion.div
