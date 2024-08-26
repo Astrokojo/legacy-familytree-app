@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { LOCAL_API } from '..config/apiEndpoints';
+import { LOCAL_API } from '../config/apiEndpoints';
 import useFetch from "./useFetch";
 const useConvert = () => {
     const { data, isPending, error } = useFetch(LOCAL_API);

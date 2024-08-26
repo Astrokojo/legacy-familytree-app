@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { LOCAL_API } from "../config/apiEndpoints";
 import useFetch from "../hooks/useFetch";
 import ClearDataButton from "../utils/clearDataButton";
-import { fadeIn, slideIn } from "../utils/varants";
+import { fadeIn, slideIn } from "../utils/variants";
 import FamilyForm from "./FamilyForm";
 import FamilyList from "./FamilyList";
 function FamilyDetails() {
