@@ -1,11 +1,7 @@
-import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-const FamilyForm = () => {
-    const [modelData, setModelData] = useState([
-        { key: uuidv4(), name: '', gender: '', birthYear: '', deathYear: '', parent: '' }
-    ]);
-
+const FamilyForm = ({modelData, setModelData}) => {
+   
     // Calculate parent keys (excluding the current member)
     const getParentKeys = (currentKey) => {
         return modelData
