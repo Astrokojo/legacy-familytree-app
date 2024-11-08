@@ -53,7 +53,7 @@ Starts both app and server concurrently
 
 ## Author
 
-- **Kojo Antwi Osei-Sarfo** - *Developer* - [Your GitHub Profile](https://github.com/Astrokojo)
+- **Kojo Antwi Osei-Sarfo** - *Developer* - [GitHub Profile](https://github.com/Astrokojo)
   - Email: [astrokojo@gmail.com](mailto:astrokojo@gmail.com)
   - Email: [kaoseisarfo@yahoo.com](mailto:kaoseisarfo@yahoo.com)
   - LinkedIn: [Kojo Antwi Osei-Sarfo](https://linkedin.com/in/kaosei-sarfo)
